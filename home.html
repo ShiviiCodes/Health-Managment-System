@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+
+<div class="dashboard">
+
+<div class="sidebar">
+<h2>🏥 Hospital</h2>
+<a href="/">Dashboard</a>
+<a href="/register">➕ Register</a>
+<a href="/patients">📋 Patients</a>
+<a href="/cache">⚡ Cache</a>
+<a href="/graph">🔗 Graph</a>
+</div>
+
+<div class="main">
+
+<h1>👋 Welcome Back</h1>
+
+<div class="stats">
+
+<div class="stat-card">
+<h3>Total Patients</h3>
+<p>{{total}}</p>
+</div>
+
+<div class="stat-card">
+<h3>Most Common Disease</h3>
+<p>{% if common %}{{common[0]}}{% endif %}</p>
+</div>
+
+</div>
+
+<div class="cards">
+
+<a href="/register" class="card-box">➕ Add Patient</a>
+<a href="/patients" class="card-box">📋 View Records</a>
+<a href="/cache" class="card-box">⚡ Recent</a>
+<a href="/graph" class="card-box">🔗 Graph</a>
+
+</div>
+
+</div>
+
+</div>
+
+</body>
+</html>
